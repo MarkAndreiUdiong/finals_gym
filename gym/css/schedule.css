@@ -1,0 +1,172 @@
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f4f4f4; /* Fallback background color */
+    background-image: url('path/to/your/background-image.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Sidebar styles */
+aside {
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black sidebar */
+    color: white;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+aside .logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+aside .logo img {
+    width: 100px;
+}
+
+aside nav {
+    margin-left: 10px;
+}
+
+aside nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+aside nav ul li {
+    margin: 20px 0;
+    text-align: left;
+}
+
+aside nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+aside nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+aside nav ul li a i {
+    margin-right: 10px;
+}
+
+aside .logout {
+    margin-top: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+aside .logout a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+aside .logout a:hover {
+    transform: translateY(-3px);
+}
+
+.logout-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    border: 1px solid #555;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.logout-dropdown a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.logout-dropdown a:hover {
+    background-color: #555;
+}
+
+main {
+    margin-left: 200px;
+    width: calc(100% - 10px);
+    height: 100vh;
+    background-image: linear-gradient(to right, #aaaaaa, #bd1717);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.schedule-form {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.schedule-form .form-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.schedule-form .form-group {
+    flex: 1;
+    min-width: 120px;
+    margin: 0 10px 15px 10px;
+}
+
+.schedule-form label {
+    display: block;
+    margin: 5px 0;
+}
+
+.schedule-form input, .schedule-form select {
+    width: 100%;
+    padding: 1px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.schedule-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.schedule-form button:hover {
+    background-color: #555;
+}

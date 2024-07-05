@@ -1,0 +1,204 @@
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f4f4f4; /* Fallback background color */
+    background-image: url('path/to/your/background-image.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Sidebar styles */
+aside {
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black sidebar */
+    color: white;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2; /* Ensure sidebar is above the footer */
+}
+
+aside .logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+aside .logo img {
+    width: 100px;
+}
+
+aside nav {
+    margin-left: 10px;
+}
+
+aside nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+aside nav ul li {
+    margin: 20px 0;
+    text-align: left;
+}
+
+aside nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+aside nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+aside nav ul li a i {
+    margin-right: 10px;
+}
+
+aside .logout {
+    margin-top: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+aside .logout a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+aside .logout a:hover {
+    transform: translateY(-3px);
+}
+
+.logout-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    border: 1px solid #555;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.logout-dropdown a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.logout-dropdown a:hover {
+    background-color: #555;
+}
+
+/* Main content styles */
+main {
+    flex: 1; /* Allow main content to expand and fill available space */
+    margin-left: 200px;
+    padding: 20px;
+    background-image: linear-gradient(to right, #aaaaaa, #bd1717);
+    position: relative;
+    z-index: 1; /* Ensure content is above the overlay */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    margin-top: 10%;
+}
+
+.wrapper h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    font-size: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.team{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+}
+
+.team .team_member{
+    background-color: #fff;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: #838b83;
+    position: relative;
+}
+
+.team .team_member h3{
+    color: #bd1717;
+    font-size: 26px;
+    margin-top: 50px;
+}
+
+.team .team_member p.role{
+    color: #ccc;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 12px 0;
+}
+
+.team .team_member .team_img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+}
+
+.team .team_member .team_img img{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    z-index: 0; /* Ensure footer is behind the sidebar */
+    width: calc(100% - 200px); /* Adjust the width to match the main content */
+    margin-left: 200px; /* Align the footer with the main content */
+}
+
+
